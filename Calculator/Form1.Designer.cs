@@ -302,7 +302,7 @@
             this.button19.TabIndex = 0;
             this.button19.Text = "1/x";
             this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.operator_Click);
+            this.button19.Click += new System.EventHandler(this.specialOperator_Click);
             // 
             // button21
             // 
@@ -314,7 +314,7 @@
             this.button21.TabIndex = 0;
             this.button21.Text = "√";
             this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.operator_Click);
+            this.button21.Click += new System.EventHandler(this.specialOperator_Click);
             // 
             // button22
             // 
@@ -338,7 +338,7 @@
             this.button20.TabIndex = 0;
             this.button20.Text = "x²\r\n";
             this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.operator_Click);
+            this.button20.Click += new System.EventHandler(this.specialOperator_Click);
             // 
             // button23
             // 
@@ -350,7 +350,7 @@
             this.button23.TabIndex = 0;
             this.button23.Text = "x³\r\n";
             this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.operator_Click);
+            this.button23.Click += new System.EventHandler(this.specialOperator_Click);
             // 
             // Form1
             // 

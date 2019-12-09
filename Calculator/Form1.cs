@@ -74,24 +74,7 @@ namespace Calculator
                     result.Text = (value / double.Parse(result.Text)).ToString("F4");
                     break;
 
-                case "1/x":
-                    result.Text = (1 / value).ToString("F4");
-                    break;
-
-                case "x²\r\n":
-                    result.Text = (value * value).ToString("F4");
-                    break;
-
-                case "x³\r\n":
-                    result.Text = (value * value * value).ToString("F4");
-                    break;
-
-                case "√":
-                    result.Text = Math.Sqrt(value).ToString("F4");
-                    break;
-
-
-
+                
                 default:
                     break;
 
@@ -108,6 +91,7 @@ namespace Calculator
         private void percentage_Click(object sender, EventArgs e)
         {
             equation.Text = "";
+            
             switch (operation)
             {
                 case "+":
@@ -130,6 +114,38 @@ namespace Calculator
                     break;
 
             }
+        }
+
+        private void specialOperator_Click(object sender, EventArgs e)
+        {
+            equation.Text = "";
+            Button b = (Button)sender;
+            operation = b.Text;
+            value = double.Parse(result.Text);
+            operation_pressed = true;
+            switch (operation)
+            {
+                case "1/x":
+                    result.Text = (1 / value).ToString("F4");
+                    break;
+
+                case "x²\r\n":
+                    result.Text = (value * value).ToString("F4");
+                    break;
+
+                case "x³\r\n":
+                    result.Text = (value * value * value).ToString("F4");
+                    break;
+
+                case "√":
+                    result.Text = Math.Sqrt(value).ToString("F4");
+                    break;
+
+                default:
+                    break;
+
+            }
+
         }
     }
 }
